@@ -1,0 +1,24 @@
+#Calculator by rmkhv
+
+while True:
+    print("Hello! This is calculator work by rmkhv.\nTo stop the calculator, type stop")
+    num1 = input("Enter one number: ")
+    num2 = input("Enter second number: ")
+    if num1 == "stop":
+        print("Bye bye")
+        break
+
+    signout = input("What operation do you want to perform?\nChoose + , -, /, *: ")
+
+    if signout not in "+-/*":
+        print ("You entered an invalid sign (/, *, +, -)")
+
+    if signout == "*":
+        print(f"Answer: {int(num1) * int(num2)}")
+    elif signout == "/":
+        print(f"Answer: {int(num1) / int(num2)}")
+    elif signout == "-":
+        print(f"Answer: {int(num1) - int(num2)}")
+    elif signout == "+":
+        print(f"Answer: {int(num1) + int(num2)}")
+    
